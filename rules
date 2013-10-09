@@ -11,3 +11,23 @@
 
 %:
 	dh $@ 
+
+override_dh_auto_build:
+	cd build/unix; make -f x86_64_linux.mk all
+
+override_dh_auto_clean:
+	rm -f build/bin/x86_64-linux/libsnap7.so
+	rm -f build/temp/x86_64/core_s7_client.o
+	rm -f build/temp/x86_64/core_s7_isotcp.o
+	rm -f build/temp/x86_64/core_s7_micro_client.o
+	rm -f build/temp/x86_64/core_s7_partner.o
+	rm -f build/temp/x86_64/core_s7_peer.o
+	rm -f build/temp/x86_64/core_s7_server.o
+	rm -f build/temp/x86_64/core_s7_text.o
+	rm -f build/temp/x86_64/lib_snap7_libmain.o
+	rm -f build/temp/x86_64/sys_snap_msgsock.o
+	rm -f build/temp/x86_64/sys_snap_sysutils.o
+	rm -f build/temp/x86_64/sys_snap_tcpsrvr.o
+	rm -f build/temp/x86_64/sys_snap_threads.o
+
+

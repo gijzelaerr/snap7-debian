@@ -18,10 +18,8 @@ Description: communication suite for interfacing with Siemens S7 PLCs
  transferring large amounts of high speed data in industrial facilities, it
  scales well down to small Linux based arm boards such as Raspberry PI,
  BeagleBone Black, pcDuino and CubieBoard.
-
  Three specialized components, Client, Server and Partner, allow you to
  definitively integrate your PC based systems into a PLC automation chain.
-
  Main features:
   * Native multi-architecture design (32/64 bit).
   * Platform independent, currently are supported Windows (from NT 4.0 up
@@ -46,10 +44,8 @@ Description: communication suite for interfacing with Siemens S7 PLCs
  transferring large amounts of high speed data in industrial facilities, it
  scales well down to small Linux based arm boards such as Raspberry PI,
  BeagleBone Black, pcDuino and CubieBoard.
-
  Three specialized components, Client, Server and Partner, allow you to
  definitively integrate your PC based systems into a PLC automation chain.
-
  Main features:
   * Native multi-architecture design (32/64 bit).
   * Platform independent, currently are supported Windows (from NT 4.0 up

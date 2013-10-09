@@ -1,1 +1,1 @@
-usr/lib/lib*.so.*
+/build/bin/x86_64-linux/libsnap7.so usr/lib

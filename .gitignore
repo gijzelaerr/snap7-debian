@@ -1,2 +1,7 @@
 *.debhelper.log
+files
+*.substvars
+snap7-dev/
+snap71/
+
 
