@@ -1,0 +1,64 @@
+Source: snap7
+Priority: extra
+Maintainer: Gijs Molenaar <gijs@pythonic.nl>
+Build-Depends: debhelper (>= 8.0.0)
+Standards-Version: 3.9.4
+Section: libs
+Homepage: http://snap7.sourceforge.net/
+Vcs-Git: git@github.com:gijzelaerr/snap7-debian.git
+Vcs-Browser: https://github.com/gijzelaerr/snap7-debian
+
+Package: snap7-dev
+Section: libdevel
+Architecture: any
+Depends: snap71 (= ${binary:Version})
+Description: communication suite for interfacing with Siemens S7 PLCs
+ The new CPUs 1200/1500 and SINAMICS Drives are also partially supported.
+ Although it has been designed to overcome the limitations of OPC servers when
+ transferring large amounts of high speed data in industrial facilities, it
+ scales well down to small Linux based arm boards such as Raspberry PI,
+ BeagleBone Black, pcDuino and CubieBoard.
+
+ Three specialized components, Client, Server and Partner, allow you to
+ definitively integrate your PC based systems into a PLC automation chain.
+
+ Main features:
+  * Native multi-architecture design (32/64 bit).
+  * Platform independent, currently are supported Windows (from NT 4.0 up
+    to Windows 8), Linux, BSD, Oracle Solaris 11.
+  * Fully scalable, starting from blade servers down to Raspberry PI board.
+  * No dependence on any third-party libraries, no installation needed, zero
+    configuration.
+  * Three Different native thread models for performance optimization: Win32
+    threads/ Posix threads / Solaris 11 threads.
+  * Two data transfer models: classic synchronous and asynchronous.
+  * Two data flow models: polling and unsolicited (PLC transfers data when it
+    wants to).
+
+
+Package: snap71
+Section: libs
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: communication suite for interfacing with Siemens S7 PLCs
+ The new CPUs 1200/1500 and SINAMICS Drives are also partially supported.
+ Although it has been designed to overcome the limitations of OPC servers when
+ transferring large amounts of high speed data in industrial facilities, it
+ scales well down to small Linux based arm boards such as Raspberry PI,
+ BeagleBone Black, pcDuino and CubieBoard.
+
+ Three specialized components, Client, Server and Partner, allow you to
+ definitively integrate your PC based systems into a PLC automation chain.
+
+ Main features:
+  * Native multi-architecture design (32/64 bit).
+  * Platform independent, currently are supported Windows (from NT 4.0 up
+    to Windows 8), Linux, BSD, Oracle Solaris 11.
+  * Fully scalable, starting from blade servers down to Raspberry PI board.
+  * No dependence on any third-party libraries, no installation needed, zero
+    configuration.
+  * Three Different native thread models for performance optimization: Win32
+    threads/ Posix threads / Solaris 11 threads.
+  * Two data transfer models: classic synchronous and asynchronous.
+  * Two data flow models: polling and unsolicited (PLC transfers data when it
+    wants to).

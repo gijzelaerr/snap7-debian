@@ -1,0 +1,5 @@
+snap7 (1.0.0-1) unstable; urgency=low
+
+  * Initial release (Closes: #nnnn)  <nnnn is the bug number of your ITP>
+
+ -- Gijs Molenaar <gijs@pythonic.nl>  Wed, 09 Oct 2013 13:04:34 +0200
