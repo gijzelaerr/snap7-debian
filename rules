@@ -1,33 +1,32 @@
 #!/usr/bin/make -f
 # -*- makefile -*-
-# Sample debian/rules that uses debhelper.
-# This file was originally written by Joey Hess and Craig Small.
-# As a special exception, when this file is copied by dh-make into a
-# dh-make output file, you may use that output file without restriction.
-# This special exception was added by Craig Small in version 0.37 of dh-make.
 
 # Uncomment this to turn on verbose mode.
 #export DH_VERBOSE=1
+
+DEB_HOST_GNU_CPU ?= $(shell dpkg-architecture -qDEB_HOST_GNU_CPU)
 
 %:
 	dh $@ 
 
 override_dh_auto_build:
-	cd build/unix; make -f x86_64_linux.mk all
+	cd build/unix; make -f $(DEB_HOST_GNU_CPU)_linux.mk all
+	mv build/bin/$(DEB_HOST_GNU_CPU)-linux/libsnap7.so build/bin/$(DEB_HOST_GNU_CPU)-linux/libsnap7.so.1
 
 override_dh_auto_clean:
-	rm -f build/bin/x86_64-linux/libsnap7.so
-	rm -f build/temp/x86_64/core_s7_client.o
-	rm -f build/temp/x86_64/core_s7_isotcp.o
-	rm -f build/temp/x86_64/core_s7_micro_client.o
-	rm -f build/temp/x86_64/core_s7_partner.o
-	rm -f build/temp/x86_64/core_s7_peer.o
-	rm -f build/temp/x86_64/core_s7_server.o
-	rm -f build/temp/x86_64/core_s7_text.o
-	rm -f build/temp/x86_64/lib_snap7_libmain.o
-	rm -f build/temp/x86_64/sys_snap_msgsock.o
-	rm -f build/temp/x86_64/sys_snap_sysutils.o
-	rm -f build/temp/x86_64/sys_snap_tcpsrvr.o
-	rm -f build/temp/x86_64/sys_snap_threads.o
+	rm -f build/bin/$(DEB_HOST_GNU_CPU)-linux/libsnap7.so
+	rm -f build/bin/$(DEB_HOST_GNU_CPU)-linux/libsnap7.so.1
+	rm -f build/temp/$(DEB_HOST_GNU_CPU)/core_s7_client.o
+	rm -f build/temp/$(DEB_HOST_GNU_CPU)/core_s7_isotcp.o
+	rm -f build/temp/$(DEB_HOST_GNU_CPU)/core_s7_micro_client.o
+	rm -f build/temp/$(DEB_HOST_GNU_CPU)/core_s7_partner.o
+	rm -f build/temp/$(DEB_HOST_GNU_CPU)/core_s7_peer.o
+	rm -f build/temp/$(DEB_HOST_GNU_CPU)/core_s7_server.o
+	rm -f build/temp/$(DEB_HOST_GNU_CPU)/core_s7_text.o
+	rm -f build/temp/$(DEB_HOST_GNU_CPU)/lib_snap7_libmain.o
+	rm -f build/temp/$(DEB_HOST_GNU_CPU)/sys_snap_msgsock.o
+	rm -f build/temp/$(DEB_HOST_GNU_CPU)/sys_snap_sysutils.o
+	rm -f build/temp/$(DEB_HOST_GNU_CPU)/sys_snap_tcpsrvr.o
+	rm -f build/temp/$(DEB_HOST_GNU_CPU)/sys_snap_threads.o
 
 

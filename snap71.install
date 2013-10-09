@@ -1,1 +1,2 @@
-/build/bin/x86_64-linux/libsnap7.so usr/lib
+#!/usr/bin/dh-exec
+/build/bin/*-linux/libsnap7.so.1 usr/lib
