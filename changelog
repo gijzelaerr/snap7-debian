@@ -1,3 +1,9 @@
+snap7 (1.1.0-2) saucy; urgency=low
+
+  *  new upstream release
+
+ -- Gijs Molenaar <gijs@pythonic.nl>  Wed, 27 Nov 2013 14:28:40 +0100
+
 snap7 (1.0.0-1) raring; urgency=low
 
   * Initial release

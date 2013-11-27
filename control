@@ -5,13 +5,13 @@ Build-Depends: debhelper (>= 8.0.0)
 Standards-Version: 3.9.4
 Section: libs
 Homepage: http://snap7.sourceforge.net/
-Vcs-Git: git@github.com:gijzelaerr/snap7-debian.git
+Vcs-Git: git://github.com/gijzelaerr/snap7-debian.git
 Vcs-Browser: https://github.com/gijzelaerr/snap7-debian
 
-Package: snap7-dev
+Package: libsnap7-dev
 Section: libdevel
 Architecture: any
-Depends: snap71 (= ${binary:Version})
+Depends: libsnap71 (= ${binary:Version})
 Description: communication suite for interfacing with Siemens S7 PLCs
  The new CPUs 1200/1500 and SINAMICS Drives are also partially supported.
  Although it has been designed to overcome the limitations of OPC servers when
@@ -34,7 +34,7 @@ Description: communication suite for interfacing with Siemens S7 PLCs
     wants to).
 
 
-Package: snap71
+Package: libsnap71
 Section: libs
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
