@@ -1,3 +1,9 @@
+snap7 (1.2.0-1) sacy; urgency=low
+
+  * new upstream release
+
+ -- Gijs Molenaar <gijs@pythonic.nl>  Wed, 19 Mar 2014 13:31:52 +0200
+
 snap7 (1.1.0-4) saucy; urgency=low
 
   * forgot to rename install files
