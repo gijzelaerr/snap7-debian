@@ -1,23 +1,12 @@
-snap7 (1.2.0-1) sacy; urgency=low
+snap7 (1.3.0-0trusty) trusty; urgency=medium
+
+  * New upstream release
+
+ -- Gijs Molenaar (launchpad ppa build key) <gijs@pythonic.nl>  Tue, 31 Mar 2015 12:24:58 +0200
+
+snap7 (1.2.1-1trusty) trusty; urgency=medium
 
   * new upstream release
 
- -- Gijs Molenaar <gijs@pythonic.nl>  Wed, 19 Mar 2014 13:31:52 +0200
+ -- Gijs Molenaar <gijs@pythonic.nl>  Fri, 02 May 2014 13:50:15 +0200
 
-snap7 (1.1.0-4) saucy; urgency=low
-
-  * forgot to rename install files
-
- -- Gijs Molenaar <gijs@pythonic.nl>  Wed, 27 Nov 2013 15:35:59 +0100
-
-snap7 (1.1.0-2) saucy; urgency=low
-
-  *  new upstream release
-
- -- Gijs Molenaar <gijs@pythonic.nl>  Wed, 27 Nov 2013 14:28:40 +0100
-
-snap7 (1.0.0-1) raring; urgency=low
-
-  * Initial release
-
- -- Gijs Molenaar <gijs@pythonic.nl>  Wed, 09 Oct 2013 13:04:34 +0200
