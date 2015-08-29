@@ -1,3 +1,9 @@
+snap7 (1.4.0-0trusty) trusty; urgency=medium
+
+  * new upstream release
+
+ -- Gijs Molenaar (launchpad ppa build key) <gijs@pythonic.nl>  Sat, 29 Aug 2015 14:17:16 +0200
+
 snap7 (1.3.0-0trusty) trusty; urgency=medium
 
   * New upstream release
