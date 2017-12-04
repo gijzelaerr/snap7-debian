@@ -1,3 +1,33 @@
+snap7 (1.4.2-1yakkety) yakkety; urgency=medium
+
+  * build for yakkety
+
+ -- Gijs Molenaar (launchpad ppa build key) <gijs@pythonic.nl>  Mon, 06 Feb 2017 10:15:04 +0200
+
+snap7 (1.4.2-1xenial) xenial; urgency=medium
+
+  * build for xenial
+
+ -- Gijs Molenaar (launchpad ppa build key) <gijs@pythonic.nl>  Mon, 06 Feb 2017 10:14:29 +0200
+
+snap7 (1.4.2-1trusty) trusty; urgency=medium
+
+  * build for trusty
+
+ -- Gijs Molenaar (launchpad ppa build key) <gijs@pythonic.nl>  Mon, 06 Feb 2017 10:13:44 +0200
+
+snap7 (1.4.2-1precise) precise; urgency=medium
+
+  * new upstream release
+
+ -- Gijs Molenaar (launchpad ppa build key) <gijs@pythonic.nl>  Mon, 06 Feb 2017 10:09:59 +0200
+
+snap7 (1.4.0-0vivid) vivid; urgency=medium
+
+  * upload for vivid
+
+ -- Gijs Molenaar (launchpad ppa build key) <gijs@pythonic.nl>  Sat, 29 Aug 2015 14:19:46 +0200
+
 snap7 (1.4.0-0trusty) trusty; urgency=medium
 
   * new upstream release
