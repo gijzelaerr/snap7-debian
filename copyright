@@ -1,17 +1,16 @@
 Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: snap7
-Source: <url://example.com>
+Source: https://sourceforge.net/projects/snap7/
 
 Files: *
-Copyright: <years> <put author's name and email here>
-           <years> <likewise for another author>
-License: LGPL-3.0+
+Copyright: 2012-2017 Davide Nardella <software@masmec.com>
+License: LGPL-3.0
 
 Files: debian/*
 Copyright: 2013 Gijs Molenaar <gijs@pythonic.nl>
 License: LGPL-3.0+
 
-License: LGPL-3.0+
+License: LGPL-3.0
  This package is free software; you can redistribute it and/or
  modify it under the terms of the GNU Lesser General Public
  License as published by the Free Software Foundation; either
@@ -27,8 +26,3 @@ License: LGPL-3.0+
  .
  On Debian systems, the complete text of the GNU Lesser General
  Public License can be found in "/usr/share/common-licenses/LGPL-3".
-
-# Please also look if there are files or directories which have a
-# different copyright/license attached and list them here.
-# Please avoid to pick license terms that are more restrictive than the
-# packaged work, as it may make Debian's contributions unacceptable upstream.
