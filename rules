@@ -8,6 +8,8 @@ DEB_HOST_GNU_CPU ?= $(shell dpkg-architecture -qDEB_HOST_GNU_CPU)
 
 ifeq ($(DEB_HOST_GNU_CPU),i686)
 	DEB_HOST_GNU_CPU = i386
+else ifeq ($(DEB_HOST_GNU_CPU),arm)
+	DEB_HOST_GNU_CPU = arm_v6
 endif
 
 %:
