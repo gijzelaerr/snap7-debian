@@ -16,8 +16,15 @@ endif
 	dh $@ 
 
 override_dh_auto_build:
-	cd build/unix; make -f $(DEB_HOST_GNU_CPU)_linux.mk all
+	cd build/unix; make -f $(DEB_HOST_GNU_CPU)_linux.mk all			\
+		CXX=$(DEB_HOST_GNU_TYPE)-g++					\
+		LinkerName=$(DEB_HOST_GNU_TYPE)-g++				\
+		SharedObjectLinkerName="$(DEB_HOST_GNU_TYPE)-g++ -shared -fPIC"
 	mv build/bin/$(DEB_HOST_GNU_CPU)-linux/libsnap7.so build/bin/$(DEB_HOST_GNU_CPU)-linux/libsnap7.so.1
+
+override_dh_shlibdeps:
+	dh_shlibdeps -l/lib/$(DEB_HOST_GNU_TYPE):/usr/$(DEB_HOST_GNU_TYPE)/lib	\
+		$@ -- -xlibgcc1-armhf-cross
 
 override_dh_auto_clean:
 	rm -f build/bin/$(DEB_HOST_GNU_CPU)-linux/libsnap7.so
