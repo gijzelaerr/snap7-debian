@@ -1,0 +1,2 @@
+#!/usr/bin/dh-exec
+/build/bin/*-linux/libsnap7.so.1 usr/lib
