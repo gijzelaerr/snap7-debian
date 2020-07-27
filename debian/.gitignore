@@ -3,5 +3,6 @@ files
 *.substvars
 snap7-dev/
 snap7-1/
-
+libsnap7-1/
+libsnap7-dev/
 
