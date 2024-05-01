@@ -1,0 +1,47 @@
+Description: ARM 64 targets
+.
+ snap7 (1.4.2-3focal) focal; urgency=medium
+ .
+   * build and upload for focal
+Author: KERN packaging <packaging@kernsuite.info>
+
+---
+The information above should follow the Patch Tagging Guidelines, please
+checkout https://dep.debian.net/deps/dep3/ to learn about the format. Here
+are templates for supplementary fields that you might want to add:
+
+Origin: (upstream|backport|vendor|other), (<patch-url>|commit:<commit-id>)
+Bug: <upstream-bugtracker-url>
+Bug-Debian: https://bugs.debian.org/<bugnumber>
+Bug-Ubuntu: https://launchpad.net/bugs/<bugnumber>
+Forwarded: (no|not-needed|<patch-forwarded-url>)
+Applied-Upstream: <version>, (<commit-url>|commit:<commid-id>)
+Reviewed-By: <name and email of someone who approved/reviewed the patch>
+Last-Update: 2024-05-01
+
+--- /dev/null
++++ snap7-1.4.2/build/unix/aarch64_linux.mk
+@@ -0,0 +1,9 @@
++#aarch64-unknown-linux-gnu
++TargetCPU  :=aarch64
++OS         :=linux
++CXXFLAGS   := -O3 -g -fPIC -pedantic
++
++# Standard part
++
++include common.mk
++
+--- /dev/null
++++ snap7-1.4.2/build/unix/arm64_osx.mk
+@@ -0,0 +1,11 @@
++TargetCPU  :=arm64
++OS         :=osx
++CXXFLAGS   := -O3 -fPIC -pedantic -target arm64-apple-darwin
++
++# Standard part
++
++include common.mk
++
++# Override the variable to add a target flag
++SharedObjectLinkerName :=g++ -shared -fPIC --target=arm64-apple-darwin
++
